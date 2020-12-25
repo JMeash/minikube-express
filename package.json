@@ -1,0 +1,22 @@
+{
+  "name": "minikube-express",
+  "version": "1.0.0",
+  "description": "A local deployment of an express server in k8s",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --verbose",
+    "test integration": "jest -t 'integration'",
+    "test unit": "jest -t 'unit'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
+  },
+  "author": "Jose Manuel Medrano Martinez"
+}
