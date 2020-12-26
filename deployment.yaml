@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catapp-deployment
+spec:
+  selector:
+    matchLabels:
+      app: catapp
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: catapp
+    spec:
+      containers:
+        - name: catapp
+          image: catapp
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
