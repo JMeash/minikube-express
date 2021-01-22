@@ -1,5 +1,4 @@
-const {getCatImages} = require('../server/requester');
-
+const { getCatImages } = require('../server/requester');
 
 describe('unit', function () {
     describe('requester', function () {

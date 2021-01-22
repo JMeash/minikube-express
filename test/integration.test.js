@@ -7,7 +7,7 @@ afterAll(async done => {
     await server.close(done);
 });
 
-jest.mock("axios");
+jest.mock('axios');
 
 describe('integration', function () {
     axios.get.mockImplementation(() => Promise.resolve({data: {cat: 'cat'}}));
